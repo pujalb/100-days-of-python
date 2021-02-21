@@ -44,22 +44,22 @@ if user == computer:
 # User selects Rock
 if user == 0:
     if computer == 1:   # Paper
-        print("Paper beats Rock \nYou lose!")
+        print("Paper wraps Rock \nYou lose!")
     elif computer == 2: # Scissors
-        print("Rock beats Scissors \nYou win!")
+        print("Rock blunts Scissors \nYou win!")
 
 # User selects Paper
 if user == 1:
     if computer == 2:   # Scissors
-        print("Scissors beats Paper \nYou lose!")
+        print("Scissors cuts Paper \nYou lose!")
     elif computer == 0: # Rock
-        print("Paper beats Rock \nYou win!")
+        print("Paper wraps Rock \nYou win!")
 
 # User selects scissors
 if user == 2:
     if computer == 0:   # Rock
-        print("Rock beats Scissors \nYou lose!")
+        print("Rock blunts Scissors \nYou lose!")
     elif computer == 1: # Paper
-        print("Scissors beats Paper \nYou win!")
+        print("Scissors cuts Paper \nYou win!")
     
 
