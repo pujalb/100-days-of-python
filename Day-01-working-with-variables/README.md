@@ -1,4 +1,4 @@
-# Repl.it links
+# [Day 1 - Working with Variables in Python to Manage Data](../README.md#day-1---working-with-variables-in-python-to-manage-data)
 
 * [Interactive Coding Exercise - Day 1.1 Printing](https://repl.it/@BalakrishnaREPL/day-1-1-exercise)
 * [Interactive Coding Exercise - Day 1.2 Debugging](https://repl.it/@BalakrishnaREPL/day-1-2-exercise)

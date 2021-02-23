@@ -1,4 +1,4 @@
-# Repl.it Links
+# [Day 3 - Control Flow and Logical Operators](../README.md#day-3---control-flow-and-logical-operators)
 
 * [Interactive Coding Exercise - Day 3.1 Odd or Even](https://repl.it/@BalakrishnaREPL/day-3-1-exercise)
 * [Interactive Coding Exercise - Day 3.2 BMI Calculator 2.0](https://repl.it/@BalakrishnaREPL/day-3-2-exercise)
