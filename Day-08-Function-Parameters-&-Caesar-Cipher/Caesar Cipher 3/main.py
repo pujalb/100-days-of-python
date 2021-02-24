@@ -1,10 +1,13 @@
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
+direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+text = input("Type your message:\n").lower()
+shift = int(input("Type the shift number:\n"))
 
+#TODO-1: Combine the encrypt() and decrypt() functions into a single function called caesar(). 
 def caesar(start_text, shift_amount, cipher_direction):
-    
     end_text = ""
-    
+
     for letter in start_text:
       # Check if each character is alphabetic
         if letter.isalpha():
@@ -25,30 +28,26 @@ def caesar(start_text, shift_amount, cipher_direction):
             end_text += letter
     print(f"The {cipher_direction}d text is {end_text}")
 
-# Import and print the logo from art.py when the program starts.
-import art
-print(art.logo)
+# def encrypt(plain_text, shift_amount):
+#   cipher_text = ""
+#   for letter in plain_text:
+#     position = alphabet.index(letter)
+#     new_position = position + shift_amount
+#     cipher_text += alphabet[new_position]
+#   print(f"The encoded text is {cipher_text}")
 
-run_cipher = True
-while run_cipher:
-    while True:
-        direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
-        if direction == "encode" or direction == "decode":
-            break
+# def decrypt(cipher_text, shift_amount):
+#   plain_text = ""
+#   for letter in cipher_text:
+#     position = alphabet.index(letter)
+#     new_position = position - shift_amount
+#     plain_text += alphabet[new_position]
+#   print(f"The decoded text is {plain_text}")
 
-    text = input("Type your message:\n").lower()
+# if direction == "encode":
+#   encrypt(plain_text=text, shift_amount=shift)
+# elif direction == "decode":
+#   decrypt(cipher_text=text, shift_amount=shift)
 
-    # Shift works for both +ve and -ve numbers
-    while True:
-        try:
-            shift = int(input("Type the shift number:\n"))
-            break
-        except:
-            pass
-
-    caesar(start_text=text, shift_amount=shift, cipher_direction=direction)
-
-    restart = input("Type 'yes' if you want to go again. Otherwise type 'no'.\n").lower()
-    if restart != "yes":
-        run_cipher = False
-        print("Goodbye")
+#TODO-2: Call the caesar() function, passing over the 'text', 'shift' and 'direction' values.
+caesar(start_text = text, shift_amount = shift, cipher_direction = direction)
